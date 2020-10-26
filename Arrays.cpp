@@ -9,11 +9,13 @@ void reverse(vector<int> &arr)
         swap(arr[i],arr[n-i-1]);
     }
 }
-int main()
+void reverseArrayDemo()
 {
     int n;
+    cout<<"Enter no. of elements in array: \n";
     cin>>n;
     vector<int> arr;
+    cout<<"Start entering array elements \n";
     for(int i=0;i<n;i++)
     {
         int x;
@@ -26,4 +28,8 @@ int main()
         cout<<i<<" ";
     }
     cout<<endl;
+}
+int main()
+{
+    reverseArrayDemo();
 }
